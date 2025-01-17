@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="body-card">
+        <div class="card text-center">
+            <h1>USUARIOS</h1>
+            <form [formGroup]="formulario" (ngSubmit)="Enviar()">
+                <div class="d-flex">
+                    <input type="text" formControlName="Nombre" placeholder="Nombre" class="form-control-lg mx-auto">
+                </div>
+                <div class="d-flex">
+                    <input type="text" formControlName="Apellido" placeholder="Apellido" class="form-control-lg mx-auto">
+                </div>
+                <div class="d-flex">
+                    <button [disabled]="formulario.invalid" type="submit" class="btn btn-success mx-auto">ENVIAR</button>
+                </div>
+            </form>
+            <div *ngIf="mensaje" class="alert alert-info mt-3">
+                {{ mensaje }}
+            </div>
+        </div>
+    </div>
+</div>
