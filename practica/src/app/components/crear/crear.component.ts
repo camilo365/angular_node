@@ -31,7 +31,8 @@ export class CrearComponent {
         response => {
           this.mensaje = response.message; 
           this.formulario.reset();
-          console.log(response)  
+          console.log(response.message)
+          this.mensaje = (response.message)  
         },
         error => {
           this.mensaje = 'Hubo un error al registrar al usuario';
