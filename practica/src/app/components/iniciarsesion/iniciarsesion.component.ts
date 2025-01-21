@@ -18,8 +18,8 @@ export class IniciarsesionComponent {
 
   constructor(private fb : FormBuilder, private CrearusuarioService : CrearUsuariosService){
     this.formulario = this.fb.group({
-      Nombre : ['', [Validators.required]],
-      Apellido : ['', [Validators.required]]
+      User : ['', [Validators.required]],
+      Password : ['', [Validators.required]]
 
     })
 

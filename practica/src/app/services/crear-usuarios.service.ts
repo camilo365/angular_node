@@ -11,7 +11,7 @@ export class CrearUsuariosService {
 
   constructor(private http: HttpClient) { }
 
-  registrarUsuarios(datos: {Nombre : string, Apellido : String}): Observable<any>{
+  registrarUsuarios(datos: {User : string, Password : String}): Observable<any>{
     return this.http.post<any>(this.apiUrl,datos);
   }
 }
