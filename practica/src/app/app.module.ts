@@ -8,6 +8,7 @@ import { CrearComponent } from './components/crear/crear.component';
 import { VerComponent } from './components/ver/ver.component';
 import { HttpClientModule } from '@angular/common/http';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { ImageModule } from 'primeng/image';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ImageModule
   ],
   providers: [
     provideClientHydration(withEventReplay()),

@@ -1,15 +1,18 @@
-<div class="container">
-    <div class="body-card">
-        <div class="card text-center">
-            <h1>USUARIOS</h1>
+<div class="img-container text-center mb-4">
+    <img class="mt-4" src="../../../assets/logo.png" alt="logo" width="100%">
+</div>
+<div class="container d-flex align-items-center">
+    <div class="body-card mx-auto">
+        <div class="col-sm card text-center">
+            <h3>INGRESE POR FAVOR</h3>
             <form [formGroup]="formulario" (ngSubmit)="Enviar()">
-                <div class="d-flex">
-                    <input type="text" formControlName="Nombre" placeholder="Nombre" class="form-control-lg mx-auto">
+                <div class="d-flex flex-column">
+                    <input type="text" formControlName="Nombre" placeholder="Nombre" class="form-control-sm mx-auto">
                 </div>
-                <div class="d-flex">
-                    <input type="text" formControlName="Apellido" placeholder="Apellido" class="form-control-lg mx-auto">
+                <div class="d-flex flex-column">
+                    <input type="text" formControlName="Apellido" placeholder="Apellido" class="form-control-sm mx-auto">
                 </div>
-                <div class="d-flex">
+                <div class="d-flex flex-column">
                     <button [disabled]="formulario.invalid" type="submit" class="btn btn-success mx-auto">ENVIAR</button>
                 </div>
             </form>
