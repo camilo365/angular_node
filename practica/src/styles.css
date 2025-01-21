@@ -6,10 +6,6 @@ body{
     background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#body-card{
-    background-color: #ffdde1;
-}
-
 img{
     width: 20%;
     border-radius: 50%;
@@ -17,5 +13,18 @@ img{
 
 #card{
     background-color: #ffdde1;
+}
+.card{
+    background-color: #ffdde1;
+}
+body-card{
+background-color: #ffdde1;
+    
+}
 
+#color{
+    background-color: #ee9ca7;
+}
+.color{
+    background-color: #ee9ca7;
 }

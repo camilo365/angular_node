@@ -13,34 +13,5 @@ import { CrearUsuariosService } from '../../services/crear-usuarios.service';
   styleUrl: './crear.component.css'
 })
 export class CrearComponent {
-  mensaje : String = ""
-  formulario : FormGroup
-
-  constructor(private fb : FormBuilder, private CrearusuarioService : CrearUsuariosService){
-    this.formulario = this.fb.group({
-      Nombre : ['', [Validators.required]],
-      Apellido : ['', [Validators.required]]
-
-    })
-
-  }
-
-  Enviar(): void {
-    if (this.formulario.valid) {
-      this.CrearusuarioService.registrarUsuarios(this.formulario.value).subscribe(
-        response => {
-          this.mensaje = response.message; 
-          this.formulario.reset();
-          console.log(response.message)
-          this.mensaje = (response.message)  
-        },
-        error => {
-          this.mensaje = 'Hubo un error al registrar al usuario';
-        }
-      );
-    } else {
-      this.mensaje = 'Por favor complete todos los campos correctamente.';
-    }
-  }
-
+  
 }

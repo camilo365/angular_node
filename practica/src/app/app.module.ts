@@ -9,12 +9,14 @@ import { VerComponent } from './components/ver/ver.component';
 import { HttpClientModule } from '@angular/common/http';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ImageModule } from 'primeng/image';
+import { IniciarsesionComponent } from './components/iniciarsesion/iniciarsesion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CrearComponent,
-    VerComponent
+    VerComponent,
+    IniciarsesionComponent,
   ],
   imports: [
     BrowserModule,
