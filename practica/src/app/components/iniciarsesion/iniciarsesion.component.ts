@@ -15,6 +15,7 @@ import { CrearUsuariosService } from '../../services/crear-usuarios.service';
 export class IniciarsesionComponent {
   mensaje : String = ""
   formulario : FormGroup
+  loading : boolean = false;
 
   constructor(private fb : FormBuilder, private CrearusuarioService : CrearUsuariosService){
     this.formulario = this.fb.group({
@@ -25,25 +26,35 @@ export class IniciarsesionComponent {
 
   }
 
-  Enviar(): void {
+carga():void{
+    this.loading = true;
+}
+
+Enviar(): void {
+    this.carga()
+    console.log("________________")
     console.log(this.formulario)
+    setTimeout(()=>{
     if (this.formulario.valid) {
+      this.mensaje = '';
       this.CrearusuarioService.registrarUsuarios(this.formulario.value).subscribe(
         response => {
+          this.loading = false
           this.mensaje = response.message; 
           this.formulario.reset();
           console.log(response.message)
-          this.mensaje = (response.message)  
+          this.mensaje = (response.message)
         },
         error => {
+          this.loading = false;
           this.mensaje = 'Hubo un error al registrar al usuario';
         }
       );
     } else {
+      this.loading = false;
       this.mensaje = 'Por favor complete todos los campos correctamente.';
     }
-  }
-
-
+  },3000);
+}
 
 }

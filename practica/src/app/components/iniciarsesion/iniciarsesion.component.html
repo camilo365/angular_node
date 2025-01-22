@@ -1,3 +1,10 @@
+<div *ngIf="loading" class="overlay">
+    <div class="spinner-container">
+      <div class="spinner-border " role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+</div>
 <div class="img-container text-center mb-4">
     <img class="mt-4" src="../../../assets/logo.png" alt="logo" width="100%">
 </div>
@@ -20,5 +27,6 @@
                 {{ mensaje }}
             </div>
         </div>
+        
     </div>
 </div>
