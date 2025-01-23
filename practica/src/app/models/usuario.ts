@@ -1,11 +1,11 @@
 export class usuario{
 
-    Nombre: String;
-    Apellido: String;
+    User: String;
+    Password: String;
 
-    constructor(Nombre:String, Apellido:String){
-        this.Nombre = Nombre;
-        this.Apellido = Apellido;
+    constructor(User:String, Password:String){
+        this.User = User;
+        this.Password = Password;
     }
 
 }
