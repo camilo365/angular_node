@@ -6,7 +6,7 @@ body{
     background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-img{
+#logo{
     width: 20%;
     border-radius: 50%;
 }

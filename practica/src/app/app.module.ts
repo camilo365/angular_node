@@ -11,6 +11,9 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ImageModule } from 'primeng/image';
 import { IniciarsesionComponent } from './components/iniciarsesion/iniciarsesion.component';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { PublicComponent } from './components/public/public.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,6 +21,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     CrearComponent,
     VerComponent,
     IniciarsesionComponent,
+    PublicComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     ReactiveFormsModule,
     HttpClientModule,
     ImageModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
   ],
   providers: [
     provideClientHydration(withEventReplay()),
