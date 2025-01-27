@@ -15,6 +15,7 @@ import { PublicComponent } from './components/public/public.component';
 import { BlockUIModule } from 'primeng/blockui';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
+import { RegistrarComponent } from './components/registrar/registrar.component';
 
 
 
@@ -26,6 +27,7 @@ import { ButtonModule } from 'primeng/button';
     VerComponent,
     IniciarsesionComponent,
     PublicComponent,
+    RegistrarComponent,
   ],
   imports: [
     BrowserModule,
