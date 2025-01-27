@@ -1,14 +1,38 @@
 body{
+    height: 100vh;
     margin: 0;
     padding: 0;
     background: #ee9ca7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+p{
+    text-align: justify;
+}
 
-#logo{
+.titulo h1, h2, h3, h4, h6 {font-size: 4rem;color: #f98ef2;text-shadow: 2px 2px 4px #000;animation: movimiento 2s infinite alternate, brillo 1.5s infinite alternate;  
+}  
+  
+@keyframes movimiento {0% {transform: translateY(0);}100% {transform: translateY(-20px);}  
+}  
+  
+@keyframes brillo {0% {text-shadow: 2px 2px 4px #000, 0 0 25px #f7f4e9, 0 0 5px #f3f0e4;}100% {text-shadow: 2px 2px 4px #000, 0 0 35px #efa4f3, 0 0 10px #d8b0dc;}  
+} 
+
+btn{
+    border-radius: 50%;
+}
+
+
+.logo{
     width: 20%;
     border-radius: 50%;
+}
+
+.collage{
+    width: 20%;
+    height: 60vh;
+    border-radius: 2%;
 }
 
 #card{
@@ -54,3 +78,12 @@ background-color: #ffdde1;
     border-width: 5.5em;
     color: #b90e86; 
 }
+
+footer a:hover {
+    color: #ffcc00; /* Cambia el color de los enlaces al pasar el mouse */
+}
+  
+footer .container {
+    max-width: 1140px; /* Limita el ancho máximo del contenedor */
+}
+  

@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './public.component.css'
 })
 export class PublicComponent {
+  visible: boolean = false;
+
+  showDialog() {
+    this.visible = true;
+  }
 
 }

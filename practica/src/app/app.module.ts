@@ -12,6 +12,10 @@ import { ImageModule } from 'primeng/image';
 import { IniciarsesionComponent } from './components/iniciarsesion/iniciarsesion.component';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { PublicComponent } from './components/public/public.component';
+import { BlockUIModule } from 'primeng/blockui';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+
 
 
 
@@ -30,6 +34,10 @@ import { PublicComponent } from './components/public/public.component';
     HttpClientModule,
     ImageModule,
     ProgressSpinnerModule,
+    BlockUIModule,
+    DialogModule,
+    ButtonModule,
+    DialogModule,
   ],
   providers: [
     provideClientHydration(withEventReplay()),
